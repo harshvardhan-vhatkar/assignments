@@ -4,6 +4,22 @@
 */
 
 function isPalindrome(str) {
+
+  //\s - spaces; [^a-zA-Z0-9] - recognizes special characters
+  let ans = str.replace(/\s/g, '').replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+
+  let n = ans.length;
+
+  if(n == 0 || n == 1){
+    return true;
+  }
+
+  for( let i = 0; i < n/2; i++ ){
+    if( ans[i] != ans[n-1-i]){
+      return false;
+    }
+  }
+  
   return true;
 }
 
