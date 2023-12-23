@@ -9,5 +9,19 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    let sum=0;
+    for(let i=1; i<=n; i++){
+        sum=sum+i;
+    }
+
+    return sum;
 }
+
+const currTime= new Date();
+let a = currTime.getTime();
+calculateTime(1000000000);
+
+const afterFuncTime= new Date();
+let b = afterFuncTime.getTime();
+
+console.log("Time taken for function execution is " + (b-a) + " seconds.");

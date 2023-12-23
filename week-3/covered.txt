@@ -1,0 +1,14 @@
+How to use fetch function (Frontend making a call to backend) and how to extract JSON from the response. How to extract other types e.g. text if its not JSON.
+Understanding how any function (created by someone else) returns a promise and then using async for that.
+High level overview of tokens vs. cookies and pros/cons of each and when to use what
+High level process flow for JWT and what steps does the backend do and what steps frontend does (e.g. store token in localstorage)
+How to send token using postman
+How to use JWT in node.js/express library to create and then verify the token.
+How to decode a JWT
+High level overview of different types of databases, when to use what.
+MongoDB introduction .. how to create a DB, use mongodb atlas to connect to cloud-mongodb instance
+Use case of ORM/ODM, what problems does it solve, why do we need them on top of a DB.
+mongoose package and schema declaration/validation
+Design/code for API … route handling for user signup, user login and sample data-get from DB using JWT and mongoose.
+Difference between hashing and encryption and 3rd type (digital certificates/signature??)
+ 

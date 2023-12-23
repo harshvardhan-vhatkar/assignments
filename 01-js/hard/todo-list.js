@@ -8,10 +8,40 @@
     - clear: deletes all todos
 
   Once you've implemented the logic, test your code by running
+  npx jest ./tests/todo-list.test.js
 */
 
 class Todo {
-
+  constructor(){
+    this.todos = [];
+  }
+  add(todo){
+    this.todos.push(todo);
+  }
+  remove(index){
+    if( index >= 0 && index < this.todos.length){
+        this.todos.splice(index, 1);
+    }
+  }
+  update(index, updatedTodo){
+    if( index >= 0 && index < this.todos.length){
+    this.todos[index] = updatedTodo;
+    }
+  }
+  getAll(){
+    return this.todos;
+  }
+  get(indexOfTodo){
+    if( indexOfTodo >= 0 && indexOfTodo < this.todos.length){
+      return this.todos[indexOfTodo];
+    }
+    return null;
+  }
+  clear(){
+    while(this.todos.length>0){
+      this.todos.pop();
+    }
+  }
 }
 
 module.exports = Todo;
